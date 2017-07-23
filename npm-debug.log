@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs',
+1 verbose cli   '/usr/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'git+https://github.com/TheLightYagami/aaaa.git' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData git+https://github.com/TheLightYagami/aaaa.git
+8 silly fetchOtherPackageData git+https://github.com/TheLightYagami/aaaa.git
+9 silly cache add args [ 'git+https://github.com/TheLightYagami/aaaa.git', null ]
+10 verbose cache add spec git+https://github.com/TheLightYagami/aaaa.git
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'git+https://github.com/TheLightYagami/aaaa.git',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'git+https://github.com/TheLightYagami/aaaa.git',
+11 silly cache add   spec: 'git+https://github.com/TheLightYagami/aaaa.git',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:TheLightYagami/aaaa.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/TheLightYagami/aaaa.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/TheLightYagami/aaaa.git',
+11 silly cache add      gitUrl: 'git://github.com/TheLightYagami/aaaa.git',
+11 silly cache add      shortcut: 'github:TheLightYagami/aaaa',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/TheLightYagami/aaaa/master/package.json' } }
+12 verbose addRemoteGit caching git+https://github.com/TheLightYagami/aaaa.git
+13 verbose addRemoteGit git+https://github.com/TheLightYagami/aaaa.git is a repository hosted by github
+14 silly tryClone cloning git+https://github.com/TheLightYagami/aaaa.git via git+https://github.com/TheLightYagami/aaaa.git
+15 verbose tryClone git-https-github-com-TheLightYagami-aaaa-git-625810d4 not in flight; caching
+16 info git [ 'config', '--get', 'remote.origin.url' ]
+17 silly validateExistingRemote git+https://github.com/TheLightYagami/aaaa.git remote.origin.url: https://github.com/TheLightYagami/aaaa.git
+18 verbose validateExistingRemote git+https://github.com/TheLightYagami/aaaa.git is updating existing cached remote /home/ayush/.npm/_git-remotes/git-https-github-com-TheLightYagami-aaaa-git-625810d4
+19 info git [ 'fetch', '-a', 'origin' ]
+20 verbose updateRemote git fetch -a origin (https://github.com/TheLightYagami/aaaa.git)
+21 verbose setPermissions git+https://github.com/TheLightYagami/aaaa.git set permissions on /home/ayush/.npm/_git-remotes/git-https-github-com-TheLightYagami-aaaa-git-625810d4
+22 verbose resolveHead git+https://github.com/TheLightYagami/aaaa.git original treeish: master
+23 info git [ 'rev-list', '-n1', 'master' ]
+24 silly resolveHead git+https://github.com/TheLightYagami/aaaa.git resolved treeish: 8dd7c82dccf40fad8abacabb496c79ea59b335cd
+25 verbose resolveHead git+https://github.com/TheLightYagami/aaaa.git resolved Git URL: git+https://github.com/TheLightYagami/aaaa.git#8dd7c82dccf40fad8abacabb496c79ea59b335cd
+26 silly resolveHead Git working directory: /tmp/npm-32011-9bfa96ca/git-cache-52db4a1c/8dd7c82dccf40fad8abacabb496c79ea59b335cd
+27 info git [ 'clone',
+27 info git   '/home/ayush/.npm/_git-remotes/git-https-github-com-TheLightYagami-aaaa-git-625810d4',
+27 info git   '/tmp/npm-32011-9bfa96ca/git-cache-52db4a1c/8dd7c82dccf40fad8abacabb496c79ea59b335cd' ]
+28 verbose cloneResolved git+https://github.com/TheLightYagami/aaaa.git clone Cloning into '/tmp/npm-32011-9bfa96ca/git-cache-52db4a1c/8dd7c82dccf40fad8abacabb496c79ea59b335cd'...
+28 verbose cloneResolved done.
+29 info git [ 'checkout', '8dd7c82dccf40fad8abacabb496c79ea59b335cd' ]
+30 verbose checkoutTreeish git+https://github.com/TheLightYagami/aaaa.git checkout Note: checking out '8dd7c82dccf40fad8abacabb496c79ea59b335cd'.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+30 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+30 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+30 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish   git checkout -b <new-branch-name>
+30 verbose checkoutTreeish
+30 verbose checkoutTreeish HEAD is now at 8dd7c82... did something
+31 error addLocal Could not install /tmp/npm-32011-9bfa96ca/git-cache-52db4a1c/8dd7c82dccf40fad8abacabb496c79ea59b335cd
+32 silly fetchPackageMetaData Error: EISDIR: illegal operation on a directory, read
+32 silly fetchPackageMetaData     at Error (native)
+32 silly fetchPackageMetaData  error for git+https://github.com/TheLightYagami/aaaa.git { [Error: EISDIR: illegal operation on a directory, read] errno: -21, code: 'EISDIR', syscall: 'read' }
+33 silly rollbackFailedOptional Starting
+34 silly rollbackFailedOptional Finishing
+35 silly runTopLevelLifecycles Starting
+36 silly runTopLevelLifecycles Finishing
+37 silly install printInstalled
+38 verbose stack Error: EISDIR: illegal operation on a directory, read
+38 verbose stack     at Error (native)
+39 verbose cwd /home/ayush/Desktop/aaaa
+40 error Linux 4.8.0-58-generic
+41 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "git+https://github.com/TheLightYagami/aaaa.git"
+42 error node v4.2.6
+43 error npm  v3.5.2
+44 error code EISDIR
+45 error errno -21
+46 error syscall read
+47 error eisdir EISDIR: illegal operation on a directory, read
+48 error eisdir This is most likely not a problem with npm itself
+48 error eisdir and is related to npm not being able to find a package.json in
+48 error eisdir a package you are trying to install.
+49 verbose exit [ -21, true ]

@@ -5,6 +5,8 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.8'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3', group: [:development, :test]
+#use bootstrap library for styles
+gem 'bootstrap-sass','3.3.1'
 #use postgresal as the database for Active Record
 group :production do
 	gem 'pg'
@@ -53,4 +55,3 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
