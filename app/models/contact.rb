@@ -1,2 +1,2 @@
-class Contact < ActiveRecord::Migration
-end
+class Contact < ActiveRecord::Base
+end 
